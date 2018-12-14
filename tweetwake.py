@@ -55,7 +55,7 @@ for status in results:
     # They are now in seconds, subtract and then divide by 60 to get minutes.
     diff_mins = int(current_ts-tweet_ts) / 60
  
-    if(diff_mins < 3):
+    if(diff_mins < config.detect_window_minutes):
         print("Wake up! Sending packet")
         send_magic_packet(config.mac_address)
 

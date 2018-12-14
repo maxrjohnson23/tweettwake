@@ -10,3 +10,4 @@ access_key = "XXXXXXXXXXXXXXXXXXXx"
 access_secret = "XXXXXXXXXXXXXXXXXXX"
 user = "mytwitterhandle"
 mac_address = "1a.2b.3c.4d.5e.6f"
+detect_window_minutes = 2
