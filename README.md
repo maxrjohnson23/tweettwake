@@ -39,16 +39,16 @@
 
 1. If you downloaded the files to your main computer, you will need to copy them to the Raspberry Pi home directory
    1. From your main computer, navigate one folder up from the cloned repository.  You should be able to see the `tweetwake` folder
-   1. Run the copy command to transfer the files to the Raspberry Pi 
+   1. Run the copy command to transfer the files to the Raspberry Pi using the correct path and IP address
    
-        `scp -pr <PATH-TO-FOLDER>/tweetwake/ pi@192.168.1.2:/home/pi/tweetwake`
+        `scp -pr <DESKTOP-FOLDER-PATH>/tweetwake/ pi@192.168.1.2:/home/pi/tweetwake`
    
    
    1. You should now have all the same contents available in `/home/pi/tweetwake` on the Raspberry Pi
    
 1.  Update your cron configuration to run the script every minute.  This appends an entry if there are existing cron jobs. This causes python3 to execute the script every minute and output the log to `/home/pi/tweetwake/log.txt`
    
-        `(crontab -l && echo "* * * * *  python3 /home/pi/tweetwake/tweetwake.py > /home/pi/tweetwake/log.txt") | crontab -`
+    `(crontab -l && echo "* * * * *  python3 /home/pi/tweetwake/tweetwake.py > /home/pi/tweetwake/log.txt") | crontab -`
    
      
 #### Troubleshooting
