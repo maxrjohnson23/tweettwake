@@ -1,5 +1,5 @@
 # TweetWake - Wake up your desktop while away from home
-### Want to be able to wake up your PC at home while outside your home network? TweetWake monitors your Twitter account and can send a wake-on-lan packet when a tweet is detected on your home timeline.
+### Want to be able to wake up your PC at home while outside your home network? TweetWake monitors your Twitter account and can send a wake-on-lan packet when a tweet is detected on your timeline.
 
 ### Benefits / Use Cases
 * Can run on a low-power device, such as a Raspberry Pi, allowing you to save energy by letting your desktop sleep
@@ -8,7 +8,8 @@
 * Avoid network vulnerabilities associated with opening your home network to the internet
 
 ### How it Works
-* Each time the script is run, it will query Twitter pull the home timeline for a specified Twitter account
+* Send a Tweet using any device using your monitored Twitter account.  The Tweet can have any text you want.
+* The script runs on an interval to query Twitter pull the home timeline for a specified Twitter account every minute
 * If any tweets are detected in the past X minutes, send a magic packet to the specified MAC address on your home network
 * Schedule as a cron job to adjust the polling interval (recommended once per minute)
 
