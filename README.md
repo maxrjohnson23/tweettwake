@@ -17,6 +17,7 @@
 ### Setting up the Script
 1. Create a Twitter application with your Twitter developer account.  Credentials are required to use Twitter's API.  [More Info](https://developer.twitter.com/en/docs/basics/apps/overview)
 2. Clone the repository to a location on your machine, or the device you will run it on
+    `git clone git@github.com:maxrjohnson23/tweetwake.git`
 
 #### Configuration
 2. Copy/rename the file `sample_config.py` to `config.py`
