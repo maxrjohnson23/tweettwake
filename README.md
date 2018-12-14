@@ -48,6 +48,10 @@
    
    1. You should now have all the same contents available in `/home/pi/tweetwake` on the Raspberry Pi
    
+1.  Navigate to the folder `/home/pi/tweetwake`.  Run pip install to pull the script's dependencies
+
+    `pip3 install -r requirements.txt`
+   
 1.  Update your cron configuration to run the script every minute.  This appends an entry if there are existing cron jobs. This causes python3 to execute the script every minute and output the log to `/home/pi/tweetwake/log.txt`
    
     `(crontab -l && echo "* * * * *  python3 /home/pi/tweetwake/tweetwake.py > /home/pi/tweetwake/log.txt") | crontab -`
