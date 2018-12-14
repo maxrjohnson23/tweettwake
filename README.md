@@ -55,7 +55,7 @@
      
 #### Troubleshooting
 * View the contents of `/home/pi/tweetwake/log.txt` for any errors using `cat log.txt`
-* Ensure the script is configured to run every minute.  You can run `crontab -l` to view the file.  Ensure there is an entry: `* * * * * python3 /home/pi/twitterwake/tweetwake.py > /home/pi/twitterwake/log.txt`
+* Ensure the script is configured to run every minute.  You can run `crontab -l` to view the file.  There should be an entry: `* * * * * python3 /home/pi/twitterwake/tweetwake.py > /home/pi/twitterwake/log.txt`
 * Make sure your `config.py` file has the correct credentials and settings
 * Make sure your computer is enabled for wake-on-lan: [setup instructions](https://www.lifewire.com/wake-on-lan-4149800)
 
